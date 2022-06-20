@@ -1,7 +1,7 @@
 create table dept (
     dno number(2), 
     dname varchar2(14),
-    loc varchar(2) constraint fk_dept_loc REFERENCES LOC2 (LOC)
+    -- loc varchar(2) constraint fk_dept_loc REFERENCES LOC2 (LOC)
     --constraint fk_dept_loc foreign key(loc) REFERENCES LOC (LOC)-- foreign key 컬럼 레벨 O, 테이블 레벨 O
 );
 create table loc2 as SELECT * from loc;

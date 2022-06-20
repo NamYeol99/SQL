@@ -1,0 +1,6 @@
+SELECT * FROM USER1.TEST; --user1 객체 보기
+create SYNONYM UTEST FOR USER1.TEST; 
+select * from utest; -- SYNONYM 사용
+
+SELECT * FROM SESSION_PRIVS; -- 권한보기
+SELECT * FROM USER_TAB_PRIVS_RECD;
